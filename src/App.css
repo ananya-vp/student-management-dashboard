@@ -1,38 +1,73 @@
-.App {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4e73df, #1cc88a);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 80%;
+}
+
+.form button {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.controls input,
+.controls select {
+  padding: 8px;
+  margin: 5px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete {
+  background: red;
+  color: white;
+}
+
+.empty {
+  color: white;
+  font-weight: bold;
 }
